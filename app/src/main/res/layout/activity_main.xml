@@ -32,7 +32,7 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="130dp"
+        android:layout_width="150dp"
         android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -62,7 +62,7 @@
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="130dp"
+        android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +153,7 @@
 
     <Spinner
         android:id="@+id/spinner3"
-        android:layout_width="100dp"
+        android:layout_width="115dp"
         android:layout_height="40dp"
         app:layout_constraintStart_toEndOf="@+id/length5"
         app:layout_constraintTop_toBottomOf="@+id/length2" />
@@ -168,7 +168,7 @@
 
     <Spinner
         android:id="@+id/spinner5"
-        android:layout_width="100dp"
+        android:layout_width="115dp"
         android:layout_height="40dp"
         app:layout_constraintStart_toEndOf="@+id/length7"
         app:layout_constraintTop_toBottomOf="@+id/spinner3" />
@@ -330,7 +330,10 @@
         android:textAlignment="center"
         android:textColorLink="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/length4value" />
+        app:layout_constraintTop_toBottomOf="@+id/length4value"
+        android:textIsSelectable="true"
+        android:textColor="@color/colorPrimary"
+        />
 
     <EditText
         android:id="@+id/resultValue1"
@@ -344,7 +347,10 @@
         android:textAlignment="center"
         android:textColorLink="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultValue" />
+        app:layout_constraintTop_toBottomOf="@+id/resultValue"
+        android:textIsSelectable="true"
+        android:textColor="@color/colorPrimary"
+        />
 
     <EditText
         android:id="@+id/resultValue2"
@@ -358,7 +364,10 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultValue1" />
+        app:layout_constraintTop_toBottomOf="@+id/resultValue1"
+        android:textIsSelectable="true"
+        android:textColor="@color/colorPrimary"
+        />
 
     <EditText
         android:id="@+id/resultValue3"
@@ -371,14 +380,17 @@
         android:textAlignment="center"
         android:textColorLink="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultValue2" />
+        app:layout_constraintTop_toBottomOf="@+id/resultValue2"
+        android:textIsSelectable="true"
+        android:textColor="@color/colorPrimary"
+        />
 
     <Button
         android:id="@+id/calculatebutton"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_alignTop="@+id/clearbutton"
-        android:backgroundTint="@android:color/holo_blue_dark"
+        android:background="@drawable/btn_shape_capsule"
         android:text="CALCULATE"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -393,7 +405,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp"
-        android:backgroundTint="@android:color/holo_red_dark"
+        android:background="@drawable/btn_shape_capsule"
         android:text="CLEAR"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"

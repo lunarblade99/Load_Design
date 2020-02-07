@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity implements
     EditText result3;
     EditText length3;
     EditText length4;
-    String[] sp1 = {"10","15","20","25","30","35","40","45","50","55","60","65","70","75","80"};
-    String[] sp2 = {"215","415","500"};
-    String[] sp3 = {"6","8","10","12","16","20","25","28","32","36","40"};
+    String[] sp1 = {"10 N/mm²","15 N/mm²","20 N/mm²","25 N/mm²","30 N/mm²","35 N/mm²","40 N/mm²","45 N/mm²","50 N/mm²","55 N/mm²","60 N/mm²","65 N/mm²","70 N/mm²","75 N/mm²","80 N/mm²"};
+    String[] sp2 = {"250 N/mm²","415 N/mm²","500 N/mm²"};
+    String[] sp3 = {"6 mm","8 mm","10 mm","12 mm","16 mm","20 mm","25 mm","28 mm","32 mm","36 mm","40 mm"};
     String[] sp4 = {"0","2","4","6","8","10","12","14","16","18","20"};
-    String[] sp5 = {"6","8","10","12","16","20","25","28","32","36","40"};
+    String[] sp5 = {"6 mm","8 mm","10 mm","12 mm","16 mm","20 mm","25 mm","28 mm","32 mm","36 mm","40 mm"};
     String[] sp6 = {"0","2","4","6","8","10","12","14","16","18","20"};
 
     @Override
@@ -114,9 +114,6 @@ public class MainActivity extends AppCompatActivity implements
                 double b;
                 double d;
                 DecimalFormat dFormat = new DecimalFormat("#.######");
-                result.setEnabled(true);
-
-
 
                 if(length3.getText().toString().isEmpty())
                 {
@@ -144,8 +141,6 @@ public class MainActivity extends AppCompatActivity implements
                     result1.setText(Double.toString(ast));
                     result2.setText(Double.toString(p));
                     result3.setText(Double.toString(wos));
-
-                    //}}
 
                     result.setEnabled(false);
                     result1.setEnabled(false);
@@ -241,7 +236,7 @@ public class MainActivity extends AppCompatActivity implements
             if(arg0.getId() == R.id.spinner2)
             {
                 switch (position) {
-                    case 0:                    gos = 215;
+                    case 0:                    gos = 250;
 
                         break;
                     case 1:                    gos = 415;
